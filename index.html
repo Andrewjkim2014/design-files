@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blockchain Banking App</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="output.css">
+  <script src="script.js" defer></script>
+  <style>
+    /* Add your CSS styling here */
+    
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Blockchain Banking</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Accounts</a></li>
+          <li><a href="#">Transactions</a></li>
+          <li><a href="#">Settings</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      
+      <div class="dashboard">
+      
+        <h2>Welcome, <span id="user-name"></span>!</h2>
+      
+        <div class="account-summary" id="account-summary">
+          <!-- Account summary items will be dynamically added here -->
+        </div>
+     
+
+        <h2>Transaction History</h2>
+        <div class="transaction-history" id="transaction-history">
+          <!-- Transaction history items will be dynamically added here -->
+        </div>
+      </div>
+
+      <div class="widgets-container">
+        <div class="widget">
+          <h3>Transfer Funds</h3>
+          <p>Send money to friends and family quickly and securely using our blockchain-powered transfer system.</p>
+          <button class="action-button">Transfer Funds</button>
+        </div>
+
+        <div class="widget">
+          <h3>Pay Bills</h3>
+          <p>Pay your utility bills, rent, and other expenses directly from your blockchain-powered account.</p>
+          <button class="action-button">Pay Bills</button>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Blockchain Banking. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Example data
+    const userData = {
+      name: "John Doe",
+      accounts: [
+        {
+          name: "Account 1",
+          balance: "$500"
+        },
+        {
+          name: "Account 2",
+          balance: "$1,200"
+        },
+        {
+          name: "Account 3",
+          balance: "$800"
+        }
+      ],
+      transactions: [
+        {
+          id: "123456",
+          date: "May 15, 2023",
+          amount: "+$100"
+        },
+        {
+          id: "789012",
+          date: "May 12, 2023",
+          amount: "-$50"
+        }
+      ]
+    };
+
+    // Update user name
+    const userNameElement = document.getElementById("user-name");
+    userNameElement.textContent = userData.name;
+
+    // Update account summary
+    const accountSummaryElement = document.getElementById("account-summary");
+    userData.accounts.forEach(account => {
+      const accountItem = document.createElement("div");
+      accountItem.classList.add("account-summary-item");
+      accountItem.innerHTML = `
+        <h3>${account.name}</h3>
+        <p class="balance">${account.balance}</p>
+        <button class="action-button">View Details</button>
+      `;
+      accountSummaryElement.appendChild(accountItem);
+    });
+
+    // Update transaction history
+    const transactionHistoryElement = document.getElementById("transaction-history");
+    userData.transactions.forEach(transaction => {
+      const transactionItem = document.createElement("div");
+      transactionItem.classList.add("transaction-item");
+      transactionItem.innerHTML = `
+        <div class="transaction-details">
+          <p class="transaction-id">Transaction ID: ${transaction.id}</p>
+          <p class="transaction-date">Date: ${transaction.date}</p>
+        </div>
+        <p class="transaction-amount ${transaction.amount.startsWith("+") ? "positive" : "negative"}">${transaction.amount}</p>
+      `;
+      transactionHistoryElement.appendChild(transactionItem);
+    });
+  </script>
+</body>
+</html>
