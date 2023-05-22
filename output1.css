@@ -1,0 +1,139 @@
+/* Layout Properties */
+.background {
+top: 0px;
+left: 0px;
+width: 1920px;
+height: 1080px;
+/* UI Properties */
+background: #171B1E 0% 0% no-repeat padding-box;
+opacity: 1;
+}
+
+.title {
+    /* Layout Properties */
+top: 82px;
+left: 240px;
+width: 444px;
+height: 59px;
+   /* UI Properties */
+text-align: left;
+font: normal normal normal 50px/60px Helvetica Neue;
+letter-spacing: 0px;
+color: #D3D0D0;
+opacity: 1;
+}
+
+.titledescription {
+    /* Layout Properties */
+top: 138px;
+left: 240px;
+width: 418px;
+height: 48px;
+/* UI Properties */
+text-align: left;
+font: normal normal 100 40px/49px Helvetica Neue;
+letter-spacing: 0px;
+color: #D3D0D0;
+opacity: 1;
+}
+
+.logo {
+    /* Layout Properties */
+top: 76px;
+left: 1571px;
+width: 108px;
+height: 108px;
+/* UI Properties */
+opacity: 1;
+}
+
+.navbackground {
+    /* Layout Properties */
+top: 247px;
+left: 0px;
+width: 1920px;
+height: 42px;
+/* UI Properties */
+opacity: 1;
+}
+
+.navaccount {
+    /* Layout Properties */
+top: 253px;
+left: 566px;
+width: 103px;
+height: 31px;
+/* UI Properties */
+text-align: left;
+font: normal normal 100 26px/32px Helvetica Neue;
+letter-spacing: 0px;
+color: #D3D0D0;
+opacity: 1;
+}
+
+.navtransfer {
+    /* Layout Properties */
+top: 253px;
+left: 773px;
+width: 96px;
+height: 31px;
+/* UI Properties */
+text-align: left;
+font: normal normal 100 26px/32px Helvetica Neue;
+letter-spacing: 0px;
+color: #D3D0D0;
+opacity: 1;
+}
+
+.navsettings {
+    /* Layout Properties */
+top: 253px;
+left: 997px;
+width: 88px;
+height: 31px;
+/* UI Properties */
+text-align: left;
+font: normal normal 100 26px/32px Helvetica Neue;
+letter-spacing: 0px;
+color: #D3D0D0;
+opacity: 1;
+}
+
+.navlogout {
+    /* Layout Properties */
+top: 253px;
+left: 1213px;
+width: 75px;
+height: 31px;
+/* UI Properties */
+text-align: left;
+font: normal normal 100 26px/32px Helvetica Neue;
+letter-spacing: 0px;
+color: #D3D0D0;
+opacity: 1;
+}
+
+.accounttitle {
+    /* Layout Properties */
+top: 385px;
+left: 294px;
+width: 277px;
+height: 35px;
+/* UI Properties */
+text-align: left;
+font: normal normal normal 30px/36px Helvetica Neue;
+letter-spacing: 0px;
+color: #D3D0D0;
+opacity: 1;
+}
+
+.dashboardcontainer {
+    /* Layout Properties */
+top: 366px;
+left: 240px;
+width: 1441px;
+height: 675px;
+/* UI Properties */
+opacity: 1;
+}
+
